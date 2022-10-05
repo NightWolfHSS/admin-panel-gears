@@ -1,3 +1,30 @@
 /*CSS-for-adminPanel*/
 *{padding: 0; margin: 0;}
-body {background: silver;}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+	body{ background: red; }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {background: orangered;}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	body {background: green;}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	body {background: orange;}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+body {background: black;}
+}
