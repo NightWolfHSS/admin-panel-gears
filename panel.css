@@ -32,24 +32,20 @@ body {
 	.panel {
 		background: orange;
 		display: flex;
+		flex-direction: row;
 	}
-
+	.left-bar, .center-bar, .right-bar {height: 700px;}
 	.left-bar {
 		background: black;
-		height: 700px;
-		width: 50px;
+		width: 80px;
 	}
-
 	.center-bar {
 		background: red;
-		height: 700px;
-		width: 200px;
+		width: 100%;
 	}
-
 	.right-bar {
 		background: orangered;
-		width: 200px;
-		height: 700px;
+		width: 300px;
 	}
 
 }
