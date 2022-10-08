@@ -36,17 +36,44 @@ body {
 	}
 	.left-bar, .center-bar, .right-bar {height: 700px;}
 	.left-bar {
-		background: black;
+		background: white;
 		width: 80px;
 	}
 	.center-bar {
-		background: red;
+		/*background: red;*/
 		width: 100%;
 	}
 	.right-bar {
 		background: orangered;
 		width: 300px;
 	}
+
+
+	/*box-center-one*/
+	.box-center-one {
+		padding-top: 50px;
+		background: white;
+		
+	}
+
+	.list-box-show {
+	}
+	.sh {
+		padding: 20px 0;
+		text-align: center;
+		position: relative;
+		-webkit-transition: background 0.3s ease-in;
+	     -moz-transition: background 0.3s ease-in;
+	       -o-transition: background 0.3s ease-in;
+	          transition: background 0.3s ease-in;
+	}
+	.sh a {
+		border-bottom: 1px solid silver;
+	}
+	.sh:hover {background: silver;}
+	.sh:hover a {border-bottom: 1px solid white;}
+	.line-fix { background: silver; width: 100%; height: 1px; margin: 0 auto; }
+
 
 }
 
