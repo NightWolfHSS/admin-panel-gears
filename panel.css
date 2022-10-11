@@ -2,8 +2,8 @@
 *{padding: 0; margin: 0; list-style-type: none; text-decoration: none; font-family: calibri;}
 body {
 	overflow-y: hidden; 
-	background-image: url("./images-panel/gig1.jpg"); /* The image used */
-    background-color: #f5cebe; /* Used if the image is unavailable */
+	background-image: url("./images-panel/gig.jpg"); /* The image used */
+    background-color: #9FB2E8; /* Used if the image is unavailable */
     height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -13,11 +13,47 @@ body {
 	justify-content: center;
 	align-items: center;}
 .content {	overflow: hidden; position: fixed;}
+.wp-popup {
+	display: none;
+	z-index: 5;
+	left: 0;
+	height: 500px;
+	width: 100%;
+	position: fixed;
+/*	display: flex;*/
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.popup {
+	padding: 20px;
+	border-radius: 20px;
+	background: #ecf0f1;
+	border: 2px solid silver;
+}
+.no:hover{ background: #3498db;} .no {margin-top: 10px;}
+.yes:hover {background: #d63447;}
+.no, .yes {
+	cursor: pointer;
+	text-align: center;
+	padding: 20px;
+}
+
+
+@media (min-width: 200px) and (max-width: 384px) {
+	body {width: 100%;}
+	.wp-content {
+		text-align: center!important;
+		margin: 0 auto;
+	}
+}
 
 /*for - moble-tab */
 @media (max-width: 699px) {
+
 	body {overflow-y: scroll!important; display: block!important; background: #fff!important;}
-	.content { 
+	.content {
+	min-height: 1200px; 
 	position: absolute!important;
 	 max-width: 1200px; border-radius: 20px; 
 	-webkit-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
