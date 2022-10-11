@@ -11,25 +11,76 @@ body {
     display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-}
-.content {
-	overflow: hidden;
-	position: fixed;
-}
+	align-items: center;}
+.content {	overflow: hidden; position: fixed;}
 
-
-@media (min-width: 700px) {
+/*for - moble-tab */
+@media (max-width: 699px) {
+	body {overflow-y: scroll!important; display: block!important; background: #fff!important;}
 	.content { 
-		background: silver; height: 700px; width: 1200px; border-radius: 20px; 
-		-webkit-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
-		-moz-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
-		box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);}
+	position: absolute!important;
+	 max-width: 1200px; border-radius: 20px; 
+	-webkit-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
+	box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);}
+	
+	.panel {
+	background: orange;
+	display: flex;
+	flex-direction: column;}
+
+	.box-center-one {display: none;}
+	.center-bar {
+		text-align: center;
+		padding: 5px;
+		background: white;}
+
+	.head-center form {padding: 10px; } .head-center h1 {font-size: 30px; color: #444;}
+	.head-center form input { padding: 5px; border-radius: 5px; border: 1px solid orange; font-size: 18px; margin: 20px 0; }
+	.head-center form button {padding: 5px; font-size: 18px; background: orange; border-radius: 5px; border: none; color: white; }
+	.litle-content {
+		display: none;
+		border-radius: 5px;
+		background: #f1f1f1;
+		text-align: left;
+		margin: 0 15px;
+		padding: 20px 20px 20px 20px;	}
+	.mob-tittle { font-size: 18px; }
+	.wp-content { padding: 15px; text-align: left; background: #f4f4f4; margin:10px; }
+	.link-main {
+		font-size: 18px;
+		color: white;
+		display: inline-block;
+		background: #7227EA;
+		margin: 10px auto 0 auto;
+		border-radius: 10px;
+		padding: 5px;
+		width: 150px;
+		height: 50px;}
+	.link-main:hover {background: #f56a47;}
+	.active-c { background:#444;  }
+
+	.p-left {
+		color: #444;
+		padding-left: 20px;
+		text-align: left;
+	}
+
+	.rg-space-top { display: flex; justify-content: flex-end;}
+	.right-bar { padding: 20px; background: white;}
+	.p-click {background: orange;  padding: 5px; margin: 5px 0; width: 50px; text-align: center; color: white; border-radius: 5px;}
+	.center-box-rb { color: #444; } .center-box-rb h3 {padding: 20px 0;}
+	.mob-box {  padding: 20px 0; margin: 15px 0;}
+	.mob-box a {font-size: 20px; border: 1px solid #444; padding: 20px; color: #444;   }
+}
+	
+
+/*for - tab design*/
+@media (min-width: 700px) {
 	.panel {
 		background: orange;
 		display: flex;
-		flex-direction: row;
-	}
+		flex-direction: row;}
 	.left-bar, .center-bar, .right-bar {height: 700px;}
 	.left-bar {
 		border-right: 1px solid #F6F6F6;
@@ -39,8 +90,9 @@ body {
 		background: #FDFDFD;
 		width: 100%;}
 	.right-bar {
-		border-left: 1px solid #F6F6F6;
-		background: #fcc97b;
+		background: url('./images-panel/bac-p.png');
+		border-left: 1px solid #4f9da6;
+		/*background: #fff;*/
 		width: 300px;}
 
 	/*box-center-one*/
@@ -78,7 +130,6 @@ body {
 		border-radius: 5px;}
 	.litle-content p {padding: 10px; color:#5C5C5C; }
 	.p-left {padding-left: 10px;}
-
 	.wp-content {
 		background: #ededed;
 		border-radius: 5px;
@@ -97,21 +148,30 @@ body {
 		width: 200px;
 		height: 50px;}
 	.link-main:hover {background: #f56a47;}
-
-	.rg-space-top {
-		background: #f56a47;
-		padding: 10px;}
+	.rg-space-top { background: #f56a47; padding: 10px;}
 	.p-click {text-align: right; padding-right: 20px; color: white;} .p-click:hover {color:black; cursor: pointer;}
 	.center-box-rb {text-align: left;  padding-left: 20px; margin-top: 50px; color: #282f44;}
 	.center-box-rb h3 {font-weight: 100; font-size: 30px; padding-bottom: 10px;}
+	.center-box-rb a {color: black; font-size: 18px; border: 1px solid black; border-radius: 5px; padding: 10px;}
+	.center-box-rb a:hover {color: white; font-size: 18px; border: 1px solid orange; background: orange;}
 }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+	.content { 
+	background: silver; height: 700px; width: 1200px; border-radius: 20px; 
+	-webkit-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
+	box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);}
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+	.content { 
+	background: silver; height: 700px; width: 1000px; border-radius: 20px; 
+	-webkit-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);
+	box-shadow: 0px 0px 26px -6px rgba(0, 0, 0, 0.41);}
 }
 
 /* Portrait tablets and small desktops */
@@ -124,4 +184,5 @@ body {
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+
 }
